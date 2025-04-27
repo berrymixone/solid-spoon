@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berry's Crafted Cravings</title>
@@ -8,6 +9,7 @@
 </head>
 <body>
 
+<button id="toggle-theme">Cambiar Tema</button>
   <!-- Encabezado con Logo y Título -->
   <header>
     <img src="logo.png" alt="Logo de Berry's Crafted Cravings" class="logo">
@@ -278,21 +280,25 @@
   </section>
 
   <!-- Sección: Pedido Anticipado -->
-  <section id="pedido">
+<section id="pedido">
     <h2>Pedido Anticipado</h2>
+
     <form id="pedidoForm">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" required>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
 
-      <label for="pedido">Tu pedido:</label>
-      <textarea id="pedido" required></textarea>
+        <label for="pedido">Pedido:</label>
+        <textarea id="pedido" name="pedido" required></textarea>
 
-      <button type="submit">Enviar Pedido</button>
+        <button type="submit">Enviar Pedido</button>
     </form>
-  </section>
+
+    <!-- Aquí aparecerá el mensaje de éxito -->
+    <p id="mensajeExito" style="display: none; color: #FFD700; font-size: 18px; text-align: center;"></p>
+</section>
 
   <script src="script.js"></script>
 </body>

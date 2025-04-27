@@ -99,12 +99,18 @@ section h2 {
 }
 
 .card {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  min-width: 280px;
-  text-align: center;
-  flex-shrink: 0;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 280px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Efecto hover para hacer zoom en las tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 .card h4 {
@@ -161,6 +167,14 @@ form textarea {
   color: #FFD700;
 }
 
+{
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: #222;
+    color: #fff;
+}
 form button {
   background-color: #FFC107;
   color: #000;
@@ -169,4 +183,12 @@ form button {
   font-size: 18px;
   border-radius: 5px;
   cursor: url('images/cursor_mano.png'), pointer;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1 {
+    animation: fadeIn 1s ease-in-out;
 }

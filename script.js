@@ -9,3 +9,7 @@ document.getElementById("pedidoForm").addEventListener("submit", function(event)
   
   alert("¡Pedido enviado! Recibirás una copia en tu correo.");
 });
+
+document.getElementById('toggle-theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
