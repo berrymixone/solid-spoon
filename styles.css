@@ -1,5 +1,7 @@
 /* Estilos Globales */
 body {
+  cursor: url('images/mi_cursor.png'), auto;
+  transition: background-color 0.3s;
   font-family: Arial, sans-serif;
   background-color: #000;
   color: #FFD700;
@@ -166,5 +168,5 @@ form button {
   padding: 12px 20px;
   font-size: 18px;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: url('images/cursor_mano.png'), pointer;
 }
