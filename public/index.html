@@ -1,89 +1,299 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berry's Crafted Cravings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.6.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.6.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.6.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <!-- Encabezado con Logo y Título -->
+  <header>
+    <img src="logo.png" alt="Logo de Berry's Crafted Cravings" class="logo">
+    <h1>Berry's Crafted Cravings</h1>
+    <p class="slogan">¡La diferencia en cada bocado!</p>
+  </header>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#mision-vision">Misión & Visión</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#pedido">Pedido Anticipado</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección: Menú Completo -->
+  <section id="menu">
+    <h2>🍕 Menú </h2>
+    
+    <!-- Categoría: Pizzas  -->
+    <div class="menu-category">
+      <h3>Pizzas (Regular 25 cm | Colossal 45 cm)</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Quezabroza</h4>
+          <p>Mix de 4 quesos, perfectamente fundidos.</p>
+          <p><strong>Regular:</strong> 89 pesos | <strong>Colossal:</strong> 189 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Aloha Clasica</h4>
+          <p>Jamón, piña y queso mozzarella.</p>
+          <p><strong>Regular:</strong> 89 pesos | <strong>Colossal:</strong> 189 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Pepperoni Lovers</h4>
+          <p>Pepperoni con abundante queso mozzarella.</p>
+          <p><strong>Regular:</strong> 89 pesos | <strong>Colossal:</strong> 189 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Mexican BBQ</h4>
+          <p>Carne, pimientos y cebolla morada.</p>
+          <p><strong>Regular:</strong> 99 pesos | <strong>Colossal:</strong> 199 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Berry's Explosion</h4>
+          <p>Mezcla sorpresa de ingredientes, cambia cada semana.</p>
+          <p><strong>Regular:</strong> 99 pesos | <strong>Colossal:</strong> 199 pesos</p>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    
+    <!-- Categoría: Promociones Especiales -->
+    <div class="menu-category">
+      <h3>Promociones Especiales</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Combo Familiar</h4>
+          <p>Una pizza jumbo + una mediana + dos bebidas grandes por 300 pesos.</p>
+        </div>
+        <div class="card">
+          <h4>Martes de Hawaiana</h4>
+          <p>¡20% de descuento en pizzas Hawaiana!</p>
+        </div>
+        <div class="card">
+          <h4>Diseña tu Pizza</h4>
+          <p>Crea tu combinación única con nuestra selección de ingredientes.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categoría: Dogos (Hot Dogs) -->
+    <div class="menu-category">
+      <h3>Dogos (Hot Dogs)</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Doggo Clásico</h4>
+          <p>Salchicha de res, pan, mayonesa, mostaza y cátsup.</p>
+          <p><strong>Precio:</strong> 20 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Doggo Chilango</h4>
+          <p>Tocino, cebolla caramelizada y jalapeños.</p>
+          <p><strong>Precio:</strong> 25 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Doggo Gourmet</h4>
+          <p>Queso cheddar, guacamole y salsa especial.</p>
+          <p><strong>Precio:</strong> 30 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Doggo Tex-Mex</h4>
+          <p>Carne molida y queso cheddar fundido.</p>
+          <p><strong>Precio:</strong> 35 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Doggo Italiano</h4>
+          <p>Queso parmesano y salsa marinara.</p>
+          <p><strong>Precio:</strong> 35 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Promoción: Doggo Time</h4>
+          <p>Compra 2 y la tercera está a mitad de precio.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categoría: Hamburguesas Premium -->
+    <div class="menu-category">
+      <h3>Hamburguesas Premium</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Clásica Cravings</h4>
+          <p>Carne de res, lechuga, jitomate y mayonesa.</p>
+          <p><strong>Precio:</strong> 45 pesos</p>
+        </div>
+        <div class="card">
+          <h4>BBQ Bacon Smash</h4>
+          <p>Tocino, salsa BBQ y queso cheddar.</p>
+          <p><strong>Precio:</strong> 55 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Double Smash Max</h4>
+          <p>Doble carne y queso fundido.</p>
+          <p><strong>Precio:</strong> 65 pesos</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categoría: Deep Fried Bar (Frituras) -->
+    <div class="menu-category">
+      <h3>Deep Fried Bar (Frituras)</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Papas Fritas Tradicionales</h4>
+          <p><strong>Precio:</strong> 25 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Aros de Cebolla Crujientes</h4>
+          <p><strong>Precio:</strong> 30 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Dedos de Queso</h4>
+          <p><strong>Precio:</strong> 35 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Alitas (BBQ/Buffalo)</h4>
+          <p><strong>Precio:</strong> 55 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Promoción: Viernes de Frituras</h4>
+          <p>Combos de alitas + papas + aros de cebolla por 90 pesos.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categoría: Postres Dulces -->
+    <div class="menu-category">
+      <h3>Postres Dulces</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Brownie con Helado</h4>
+          <p><strong>Precio:</strong> 40 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Cheesecake Clásico</h4>
+          <p><strong>Precio:</strong> 35 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Churros con Cajeta</h4>
+          <p><strong>Precio:</strong> 30 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Berry's Pizza Dulce</h4>
+          <p>Masa de pizza con chocolate derretido, fresas y helado.</p>
+          <p><strong>Precio:</strong> 50 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Promoción: Dúo Dulce</h4>
+          <p>Ordena 2 postres y obtén un descuento del 20%.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categoría: Bebidas -->
+    <div class="menu-category">
+      <h3>Bebidas</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Refrescos (355 ml)</h4>
+          <p><strong>Precio:</strong> 20 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Agua fresca del día</h4>
+          <p><strong>Precio:</strong> 25 pesos</p>
+        </div>
+        <div class="card">
+          <h4>Malteadas clásicas</h4>
+          <p><strong>Precio:</strong> 40 pesos</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categoría: Eventos y Estrategias de Fidelización -->
+    <div class="menu-category">
+      <h3>Eventos y Estrategias de Fidelización</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Pizza Trivia Night</h4>
+          <p>Participa en nuestra noche de preguntas y gana descuentos.</p>
+        </div>
+        <div class="card">
+          <h4>Reto del Gigante</h4>
+          <p>Termina una pizza jumbo solo y ¡es gratis!</p>
+        </div>
+        <div class="card">
+          <h4>Programa "Berry's Points"</h4>
+          <p>Acumula puntos por cada compra y cámbialos por productos o descuentos exclusivos.</p>
+        </div>
+        <div class="card">
+          <h4>Pase VIP "Berry's Lovers"</h4>
+          <p>Descuentos mensuales, prioridad en pedidos y regalos exclusivos.</p>
+        </div>
+        <div class="card">
+          <h4>Celebraciones de Cumpleaños</h4>
+          <p>Pizza mediana gratis para el cumpleañero en una orden familiar.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categoría: Servicio a Domicilio -->
+    <div class="menu-category">
+      <h3>Servicio a Domicilio</h3>
+      <div class="slider">
+        <div class="card">
+          <h4>Delivery Combos Especiales</h4>
+          <p><strong>Opción 1:</strong> Pizza mediana + bebida + postre por 150 pesos</p>
+          <p><strong>Opción 2:</strong> Alitas + frituras + malteada por 120 pesos</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <!-- Sección: Misión y Visión -->
+  <section id="mision-vision">
+    <h2>Misión y Visión</h2>
+    <div class="info-box">
+      <h3>Misión</h3>
+      <p>Proveer productos que fusionen innovación y calidad, respaldados por valores de honestidad y lealtad, generando experiencias gastronómicas únicas.</p>
+    </div>
+    <div class="info-box">
+      <h3>Visión</h3>
+      <p>Posicionarse como una cadena mexicana de fast food, reconocida por la originalidad y excelencia en cada creación, consolidándose como una marca auténtica en el mercado.</p>
+    </div>
+    <div class="info-box">
+      <h3>Acerca de Nosotros</h3>
+      <p>Berry's Crafted Cravings se especializa en ofertas originales a buen costo, utilizando ingredientes de alta calidad y procesos innovadores para deleitar el paladar de nuestros clientes.</p>
+    </div>
+  </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <!-- Sección: Ubicación -->
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Av. Guelatao, Iztapalapa, CDMX</p>
+    <p>WhatsApp: <a href="https://wa.me/525651906474?text=¡Hola! Quiero hacer un pedido." target="_blank">Contactar por WhatsApp</a>
+  </section>
+
+  <!-- Sección: Pedido Anticipado -->
+  <section id="pedido">
+    <h2>Pedido Anticipado</h2>
+    <form id="pedidoForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" required>
+
+      <label for="pedido">Tu pedido:</label>
+      <textarea id="pedido" required></textarea>
+
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
