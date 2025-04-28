@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "berryscravings-f0ccd"
-  }
+    "default": "berryscravings-f0ccd",
+    "Berrys web app": "berryscravings-f0ccd"
+  },
+  "targets": {},
+  "etags": {}
 }
