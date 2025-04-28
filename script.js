@@ -8,6 +8,13 @@ document.getElementById("pedidoForm").addEventListener("submit", function(event)
   window.location.href = `mailto:gogorator@gmail.com?subject=Nuevo Pedido&body=${encodeURIComponent(mensaje)}`;
   
   alert("¡Pedido enviado! Recibirás una copia en tu correo.");
+  window.onload = function() {
+    document.getElementById("popup").style.display = "flex";
+};
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
 });
 
 document.getElementById('toggle-theme').addEventListener('click', () => {
